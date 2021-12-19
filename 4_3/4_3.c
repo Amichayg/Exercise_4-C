@@ -5,7 +5,7 @@
 * checks if string is completely uppercase ,or completely lowercase. 
 * @param[in] string the string to evaluate
 * @param[in] upper the value to check against - if 1 uppercase, if 0 lowercase. 
-* @param[out] wether the string is entirely upper/lower.
+* @param[out] isCase wether the string is entirely upper/lower.
 */
 int IsCase(char* string, int upper) 
 {
@@ -34,6 +34,9 @@ void ClassifyArgCase(char* args[], int argCount)
 	int noCase = argCount - cases[0] - cases[1]; /* calculates noCase, args that are neither upper nor lower case*/
 	printf("Lowercase:%d Upercase:%d NoCase:%d\n", cases[0],cases[1],noCase);
 }
+/**
+* This program prints the cmdline arguments, their count, and the count of uppercase/lowercase/nocase arguments. 
+*/
 int main(int argc, char* argv[]) 
 {
 	for (int i = 1; i < argc; i++) 

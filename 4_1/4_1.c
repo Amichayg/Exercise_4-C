@@ -11,6 +11,9 @@ void ReversedString(char* str)
 		printf("%c", str[i]);
 	}
 }
+/**
+* We recieve a word and print it reversed
+*/
 int main()
 {
 	char* string[20];

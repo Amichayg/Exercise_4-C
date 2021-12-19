@@ -3,8 +3,8 @@
 /**
 prints section of string
 @param[in] string
-@param[in] start
-@param[in] end
+@param[in] start Index to start printing from
+@param[in] end Index to stop printing at. 
 */
 void PrintSubstring(char* string, int start, int end)
 {
@@ -13,6 +13,10 @@ void PrintSubstring(char* string, int start, int end)
 		printf("%c", string[i]);
 	}
 }
+/**
+* prints sentence reversed
+* @param[in] sentence string to be reversed
+*/
 void ReversedSentence(char* sentence) 
 {
 	int end = strlen(sentence);
@@ -27,6 +31,9 @@ void ReversedSentence(char* sentence)
 	}
 	PrintSubstring(sentence, 0, end);
 }
+/**
+* Recives sentence and reverses it. 
+*/
 int main() 
 {
 	char* sentence[40]; 

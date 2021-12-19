@@ -1,0 +1,50 @@
+\hypertarget{4__3_8c}{}\doxysection{4\+\_\+3/4\+\_\+3.c File Reference}
+\label{4__3_8c}\index{4\_3/4\_3.c@{4\_3/4\_3.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{4__3_8c_aaac81f637b6182248979f8ecf8a78ccd}{Is\+Case}} (char $\ast$string, int upper)
+\item 
+void \mbox{\hyperlink{4__3_8c_ab5f0e1c4cd127829123f3d6c66c7f352}{Classify\+Arg\+Case}} (char $\ast$args\mbox{[}$\,$\mbox{]}, int arg\+Count)
+\item 
+int \mbox{\hyperlink{4__3_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{4__3_8c_ab5f0e1c4cd127829123f3d6c66c7f352}\label{4__3_8c_ab5f0e1c4cd127829123f3d6c66c7f352}} 
+\index{4\_3.c@{4\_3.c}!ClassifyArgCase@{ClassifyArgCase}}
+\index{ClassifyArgCase@{ClassifyArgCase}!4\_3.c@{4\_3.c}}
+\doxysubsubsection{\texorpdfstring{ClassifyArgCase()}{ClassifyArgCase()}}
+{\footnotesize\ttfamily void Classify\+Arg\+Case (\begin{DoxyParamCaption}\item[{char $\ast$}]{args\mbox{[}$\,$\mbox{]},  }\item[{int}]{arg\+Count }\end{DoxyParamCaption})}
+
+a function that classifies arg cases by lowercase uppercase and no specific case and prints result 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em args} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em arg\+Count} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{4__3_8c_aaac81f637b6182248979f8ecf8a78ccd}\label{4__3_8c_aaac81f637b6182248979f8ecf8a78ccd}} 
+\index{4\_3.c@{4\_3.c}!IsCase@{IsCase}}
+\index{IsCase@{IsCase}!4\_3.c@{4\_3.c}}
+\doxysubsubsection{\texorpdfstring{IsCase()}{IsCase()}}
+{\footnotesize\ttfamily int Is\+Case (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{int}]{upper }\end{DoxyParamCaption})}
+
+checks if string is completely uppercase ,or completely lowercase. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em string} & the string to evaluate \\
+\hline
+\mbox{\texttt{ in}}  & {\em upper} & the value to check against -\/ if 1 uppercase, if 0 lowercase. \\
+\hline
+\mbox{\texttt{ out}}  & {\em is\+Case} & wether the string is entirely upper/lower. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{4__3_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{4__3_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{4\_3.c@{4\_3.c}!main@{main}}
+\index{main@{main}!4\_3.c@{4\_3.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+This program prints the cmdline arguments, their count, and the count of uppercase/lowercase/nocase arguments. 

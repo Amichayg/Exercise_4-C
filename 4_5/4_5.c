@@ -1,5 +1,4 @@
 ///@file 4_5.c
-///Here
 #include <stdio.h>
 
 /**
@@ -20,7 +19,7 @@ int min(int a, int b) {
 * Example: "ch" is contained in beginning of "char", chair is not contained in charlatan.
 * @param[in] str1 
 * @param[in] str2
-* @param[out] isContained 
+* @param[out] isContained Value indicating wether the short string is contained in  start oflarger string
 */
 int stringInStartOfString(char* str1, char* str2) {
 	int len = min(strlen(str1), strlen(str2));  /*length of shortest string to use in loop*/
@@ -31,7 +30,9 @@ int stringInStartOfString(char* str1, char* str2) {
 	}
 	return 1;
 }
-
+/**
+* This program recieves a search query and prints matching environment variables starting with search string.
+*/
 int main(int argc, char* argv[], char* envp[])
 {
 	char* search[20];

@@ -3,7 +3,7 @@
 #include <string.h>
 /**
 * This function recives a non-formatted environment variable string, formats it, and prints it. 
-* @param[IN] envStr an environment string, supplied from envp
+* @param[in] envStr an environment string, supplied from envp
 */
 void PrintEnv(char* envStr) {
     char* position; char* envVar; char* envVal; 
@@ -11,6 +11,9 @@ void PrintEnv(char* envStr) {
     envVal = strtok_s(NULL, "=", &position); /* we use strtok to get the second section of the envStr*/
     printf("Environment variable \"%s\" has the value \"%s\"\n", envVar, envVal); 
 }
+/**
+* We print the environment variables with formatting
+*/
 int main(int argc, char* argv[], char* envp[])
 {
     while (*envp) {  /* we loop the envp list using the supplied pointer*/
